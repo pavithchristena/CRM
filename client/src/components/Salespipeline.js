@@ -243,7 +243,7 @@ const Salespipeline = (props) => {
 
     const submitHandler = async () => {
         try {
-            const response = await axios.post("http://localhost:4000/addnew", pipelineData);
+            const response = await axios.post("https://crmback.sightspectrum.co.in", pipelineData);
             console.log(response.data);
             setErrorMsg('');
             setPipelineData(response.data)
