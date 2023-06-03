@@ -113,7 +113,7 @@ const ManagePipeline = () => {
     }
     useEffect(() => {
         axios
-            .get('https://crmback.sightspectrum.co.in')
+            .get('https://crmback.sightspectrum.co.in/getclientdata')
             .then((getdata) => {
                 setClientData(getdata.data)
 
